@@ -1,0 +1,119 @@
+.footer {
+    margin-top: 70px;
+    background-color: #E1EDE6;
+    padding: 23px 0;
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+}
+
+.footer__contact {
+    grid-row: 2 / -1;
+    color: #86928B;
+    font-size: 18px;
+}
+.footer__contact-phone {
+    color: #2C2D35;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+.footre__list-item-title {
+    color: #2C2D35;
+    font-size: 20px;
+}
+
+.footer__list-link {
+    color: #86928B;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.social-imgs {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 10px;
+}
+
+.social-text {
+    color: #86928B;
+    font-size: 12px;
+}   
+
+.social-text + .social-text {
+    margin-top: 8px;
+}
+
+@media (max-width: 1050px) {
+    .footer {
+        padding-bottom: 0;
+    }
+    .footer__wrapper {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .footer__contact {
+        grid-row: 2 / -1;
+        color: #86928B;
+        font-size: 16px;
+    }
+    .footer__contact-phone {
+        color: #2C2D35;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .social-imgs {
+        column-gap: 20px;
+    }
+    .footer__logo {
+        grid-column: 2 / 3;
+        grid-row: 2 / 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .footre__list-item-title {
+        font-size: 16px;
+    }
+    
+    .footer__list-link {
+        font-size: 14px;
+        line-height: 110%;
+    }
+    
+    .social-imgs {
+        column-gap: 10px;
+        margin-bottom: 8px;
+    }
+    .footer__contact-phone {
+        color: #2C2D35;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: start;
+    }
+    .footer__contact {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .footer__logo {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
