@@ -159,6 +159,10 @@
         padding: 0 15px;
         overflow-x: auto;
     }
+
+    .reproductions__header-menu::-webkit-scrollbar {
+        background: rgb(255, 255, 255);
+    }   
 }
 
 @media (max-width: 576px) {
